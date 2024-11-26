@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .a{
+            border: 2px solid;
+            width: 250px;
+            height: 550px;
+            background-color: red;
+            border-radius: 20%;
+            margin: auto;
+        }
+        input{
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            font-size: 30px;
+            
+
+        }
+        button{
+            width: 50px;
+            height: 50px;
+            border-radius: 10%;
+           margin-left: 5px;
+           margin-top: 10px;
+            background-color: black;
+            color: white;
+            font-size: 30px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="a">
+        <form>
+        <br>
+        <br>
+        <input type="text" id="m" readonly>
+        <br>
+        <button type="button" onclick="purni('+')">+</button>
+        <button type="button" onclick="purni1('-')">-</button>
+        <button type="button" onclick="purni2('*')">*</button>
+        <button type="button" onclick="purni3('/')">/</button>
+        <button type="button" onclick="purni4()">=</button>
+        <button type="button" onclick="purni5()">C</button>
+        <button type="button" onclick="purni6('1')">1</button>
+        <button type="button" onclick="purni7('2')">2</button>
+        <button type="button" onclick="purni8('3')">3</button>
+        <button type="button" onclick="purni9('4')">4</button>
+        <button type="button" onclick="purni10('5')">5</button>
+        <button type="button" onclick="purni11('6')">6</button>
+        <button type="button" onclick="purni12('7')">7</button>
+        <button type="button" onclick="purni13('8')">8</button>
+        <button type="button" onclick="purni14('9')">9</button>
+        <button type="button" onclick="purni0('0')">0</button>
+        </form>
+    </div>
+
+
+
+    <script>
+
+     var p = document.getElementById('m');
+
+      function purni(a){
+        p.value +=a;
+      }
+      function purni1(a){
+        p.value +=a;
+      }
+      function purni2(a){
+        p.value +=a;
+      }
+      function purni3(a){
+        p.value +=a;
+      }
+      function purni5(){
+        p.value ="";
+      }
+      function purni4(){
+        p.value = eval(p.value);
+      }
+      function purni6(a){
+        p.value +=a;
+      }
+      function purni7(a){
+        p.value +=a;
+      }
+      function purni8(a){
+        p.value +=a;
+      }
+      function purni9(a){
+        p.value +=a;
+      }
+      function purni10(a){
+        p.value +=a;
+      }
+      function purni11(a){
+        p.value +=a;
+      }
+      function purni12(a){
+        p.value +=a;
+      }
+      function purni13(a){
+        p.value +=a;
+      }
+      function purni14(a){
+        p.value +=a;
+      }
+      function purni0(a){
+        p.value +=a;
+      }
+
+    </script>
+</body>
+</html>
